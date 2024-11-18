@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Navigation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Railway Navigation System</h1>
+        <div class="map">
+            <canvas id="mapCanvas" width="1400" height="1200"></canvas> <!-- Increased canvas size -->
+        </div>
+        <div class="controls">
+            <label for="startNode">Start Location:</label>
+            <select id="startNode"></select>
+            
+            <label for="endNode">End Location:</label>
+            <select id="endNode"></select>
+            
+            <button id="findPath">Find Shortest Path</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
